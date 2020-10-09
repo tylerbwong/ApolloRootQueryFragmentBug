@@ -7,7 +7,6 @@ To demonstrate the bug, we will use a custom `OkHttpClient` to see the actual re
 Given the following queries
 
 ```graphql
-// Might want a common root query fragment for different directives per query
 query PlanetRootQueryBug {
   ...rootPlanetQueryFragment
 }
@@ -18,6 +17,7 @@ query PlanetRootQueryWorks {
   }
 }
 
+// Might want a common root query fragment for different directives per query
 fragment rootPlanetQueryFragment on Root {
   planet(planetID: 1) {
     ...planetFragment
