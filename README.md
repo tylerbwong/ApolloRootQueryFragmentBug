@@ -17,7 +17,7 @@ query PlanetRootQueryWorks {
   }
 }
 
-// Might want a common root query fragment for different directives per query
+# Might want a common root query fragment for different directives per query
 fragment rootPlanetQueryFragment on Root {
   planet(planetID: 1) {
     ...planetFragment
