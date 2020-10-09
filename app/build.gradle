@@ -32,6 +32,11 @@ android {
     }
 }
 
+// Same issue is present for Kotlin models
+//apollo {
+//    generateKotlinModels.set(true)
+//}
+
 dependencies {
 
     implementation 'com.apollographql.apollo:apollo-runtime:2.4.1'
