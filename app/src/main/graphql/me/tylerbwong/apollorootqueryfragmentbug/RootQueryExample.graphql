@@ -2,17 +2,7 @@ query PlanetRootQueryBug {
   ...rootPlanetQueryFragment
 }
 
-query PlanetRootQueryTwoBug {
-  ...rootPlanetQueryFragment
-}
-
 query PlanetRootQueryWorks {
-  planet(planetID: 1) {
-    ...planetFragment
-  }
-}
-
-query PlanetRootQueryTwoWorks {
   planet(planetID: 1) {
     ...planetFragment
   }
